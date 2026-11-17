@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-web">
+        <div class="logo">
+          <a class="logo"><span>☀️</span>Skycast</a>
+        </div>
+        <form class="search">
+          <label class="lab-hiddden" for="search">Search for a city</label>
+          <input name="search" placeholder="Search for a city..." />
+          <button type="submit">Search</button>
+        </form>
+        <div>
+          <nav class="nav-part">
+            <a href="#top">Today</a>
+            <a href="#forcast">Forecast</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main-section">
+      <div class="continer">
+        <div class="section1">
+          <div class="curr-weather">
+            <span class="tag-update">Updated 10:30</span>
+            <small>CURRENT WEATHER</small>
+            <h2>London, UK</h2>
+            <p>Monay, 16 Septemper</p>
+          </div>
+          <img src="image.png" alt="sun" />
+        </div>
+
+        <div class="section2">
+          <div class="wrraper-botom">
+            <h1>18<span>°C</span></h1>
+          </div>
+          <div class="curr-desc">
+            <span>Partly cloud</span>
+            <p>Feels like 17°C</p>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="title">
+          <p class="head-title">TODAY</p>
+          <h2>Weather details</h2>
+        </div>
+        <div class="wrrapr-card">
+          <article class="details-card">
+            <span> 💧 </span>
+            <p>Humidity</p>
+            <h3>72%</h3>
+          </article>
+          <article class="details-card">
+            <span> 💨 </span>
+            <p>Wind</p>
+            <h3>14 km/h</h3>
+          </article>
+          <article class="details-card">
+            <span> ☀️ </span>
+            <p>Visibility</p>
+            <h3>10 km</h3>
+          </article>
+        </div>
+      </section>
+      <section id="forcast">
+        <div class="title">
+          <p class="head-title">FORECAST</p>
+          <h2>Next few hours</h2>
+        </div>
+        <div class="forecast">
+          <div class="hour cuurent">
+            <p>Now</p>
+            <span>🌤️</span>
+            <strong>18°</strong>
+          </div>
+          <div class="hour">
+            <p>12 PM</p>
+            <span>⛅</span>
+            <strong>19°</strong>
+          </div>
+          <div class="hour">
+            <p>2 PM</p>
+            <span>🌧️</span>
+            <strong>18°</strong>
+          </div>
+          <div class="hour">
+            <p>4 PM</p>
+            <span>🌤️</span>
+            <strong>17°</strong>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="title">
+          <p class="head-title">THIS WEEK</p>
+          <h2>5-day forcast</h2>
+        </div>
+        <div class="wrrapr">
+          <article class="details-card">
+            <h3>Tue</h3>
+            <span> 🌤️ </span>
+            <p>19° / 12°</p>
+          </article>
+          <article class="details-card">
+            <h3>Wed</h3>
+            <span> 🌧️ </span>
+            <p>16° / 10°</p>
+          </article>
+          <article class="details-card">
+            <h3>Thu</h3>
+            <span> ⛅ </span>
+            <p>17° / 11°</p>
+          </article>
+          <article class="details-card">
+            <h3>Fri</h3>
+            <span> ☀️ </span>
+            <p>21° / 13°</p>
+          </article>
+          <article class="details-card">
+            <h3>Sat</h3>
+            <span> 🌤️ </span>
+            <p>20° / 12°</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <strong>Skycast</strong>
+        <p>Simple weather for everyday planning.</p>
+      </div>
+      <p>Fictional data for a student project.</p>
+      <p>© 2025 Skycast</p>
+    </footer>
+  </body>
+</html>
