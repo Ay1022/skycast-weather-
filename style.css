@@ -15,9 +15,6 @@ header{
     gap: 40px;
     padding: 0 64px;
     height: 88px;
-
-
-
 }
 header .header-web{
     display: grid;
@@ -99,10 +96,6 @@ header a:visited{
     color:var( --button-color);
 }
 
-
-
-
-
 .main-section{
     flex-direction: column;
     gap: 60px;
@@ -150,9 +143,8 @@ header a:visited{
 .section1 image{
     height: 60px;
     width: 90px;
-
-
 }
+
 .section2{
     border-top: 1px solid var(--border-color);
     margin-top: 30px;
@@ -303,4 +295,114 @@ footer strong{
     top: 135px;
     right: 80px;
     border-radius: 999px;
+}
+
+@media screen and (max-width: 1200px) {
+    header{
+        padding: 30px;
+    }
+    
+    header .header-web {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        
+    }
+    .search{
+        
+        grid-area: 2/1/2/3;
+        justify-content: center;
+
+    }
+    .search input{
+        width: 100%;
+    }
+    .tag-update{
+    position: absolute;
+    top: 200px;
+    right: 80px;
+}
+}
+@media screen and (max-width: 768px) {
+    header{
+        padding: 30px;
+    }
+    
+    header .header-web {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        
+    }
+    .search{
+        
+        grid-area: 2/1/2/3;
+        justify-content: center;
+
+    }
+    .search input{
+        width: 100%;
+    }
+    .tag-update{
+    position: absolute;
+    top: 190px;
+    right: 80px;
+}
+}
+@media screen and (max-width:568px){
+    .wrrapr-card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .curr-weather h2{
+        font-size: 20px;
+
+    }
+    .details-card{
+        flex-direction: row;
+        flex-grow: 1;
+        
+    }
+    img{
+        max-width: 60px;
+        height: auto;
+    }
+    .section2{
+        justify-content: center;
+        gap: 16px;
+    }
+    .section2 h1{
+        font-size:70px ;
+    }
+    .curr-desc{
+        gap: 20px;
+    }
+    .curr-desc span{
+        font-size: 30px;
+    } 
+    .curr-weather small{
+        font-size: 10px;
+    }
+    .curr-weather h2{
+        font-size: 30px;
+    }
+    .forecast{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        
+    }
+    .hour{
+        grid-template-rows: 1fr 1fr;
+    }
+    .wrrapr{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .tag-update{
+    position: absolute;
+    top: 200px;
+    right: 80px;
+}
+
 }
